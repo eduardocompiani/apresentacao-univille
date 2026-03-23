@@ -89,7 +89,7 @@ presentation/
 - Formato: `3 / 12`
 - Canto superior direito, fonte monospace, cor secundária
 
-## Slides (12 total)
+## Slides (13 total)
 
 ### Slide 1 — Título
 - Layout: centralizado
@@ -135,11 +135,18 @@ presentation/
 - Layout: label de seção + tópicos
 - Conteúdo: Focar em fundamentos, Construir projetos simples, Errar rápido e aprender, Desenvolver consistência
 
-### Slide 11 — Citação final
+### Slide 11 — Propósito na prática
+- Layout: label de seção + título + conteúdo
+- Label: "PROPÓSITO NA PRÁTICA" (accent, uppercase, letter-spacing)
+- Título: "Por que eu faço o que faço"
+- Conteúdo: MotoristaPX conecta motoristas com transportadoras. Propósito da empresa: "Ser amado pelos motoristas e ajudantes". Conexão pessoal: filho de caminhoneiro, construindo tecnologia pra essa realidade.
+- Frase de reforço (gradiente accent): "Programar é o meio. O propósito é o motor."
+
+### Slide 12 — Citação final
 - Layout: centralizado, citação com borda accent à esquerda
 - Conteúdo: "Vocês não precisam ser os melhores agora — só não podem parar" (itálico)
 
-### Slide 12 — Q&A
+### Slide 13 — Q&A
 - Layout: centralizado, simples
 - Conteúdo: "Perguntas?" (título grande) + "Bora trocar uma ideia" (secundário)
 
