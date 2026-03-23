@@ -163,8 +163,8 @@ html, body {
 }
 
 .profile-photo {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   border: 2px solid var(--accent);
   object-fit: cover;
@@ -190,9 +190,9 @@ html, body {
 }
 
 .section-content h2 {
-  font-size: 1.3rem;
-  font-weight: 600;
-  margin-bottom: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
 }
 
 .section-content p {
@@ -209,8 +209,14 @@ html, body {
 .icon-list {
   list-style: none;
   font-size: 1.1rem;
+  color: var(--text-secondary);
 }
 
 .icon-list li {
-  margin: 0.5rem 0;
+  margin: 1.2rem 0;
+}
+
+.icon-list li .bullet {
+  color: var(--accent);
+  margin-right: 0.6rem;
 }
