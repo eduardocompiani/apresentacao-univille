@@ -25,7 +25,7 @@ Apresentação web para palestra direcionada a alunos do 1º semestre de Engenha
 
 ```
 presentation/
-├── index.html           # HTML principal com todos os 12 slides
+├── index.html           # HTML principal com todos os 13 slides
 ├── src/
 │   ├── main.js          # Navegação, progresso, contador, toggle tema
 │   └── style.css        # Estilos: temas, layouts, responsivo
