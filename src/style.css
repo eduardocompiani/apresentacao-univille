@@ -40,6 +40,7 @@ html, body {
   font-family: 'Inter', system-ui, sans-serif;
   font-size: 16px;
   line-height: 1.6;
+  transition: background 0.25s ease, color 0.25s ease;
 }
 
 #presentation {
@@ -198,6 +199,10 @@ html, body {
   color: var(--text-secondary);
   font-size: 1rem;
   line-height: 1.6;
+}
+
+.section-content p.accent-gradient {
+  color: var(--accent);
 }
 
 /* List with icons */
