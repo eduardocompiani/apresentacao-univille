@@ -239,6 +239,13 @@ html, body {
   border-color: var(--accent);
 }
 
+.social-card-qr {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
 .social-card-label {
   font-size: 0.8rem;
   font-weight: 600;
