@@ -31,7 +31,7 @@ presentation/
 │   └── style.css        # Estilos: temas, layouts, responsivo
 ├── public/
 │   └── images/
-│       └── eduardo.jpg  # Foto do palestrante
+│       └── eduardo.jpg  # Foto do palestrante (placeholder inicial; substituir pelo arquivo real em public/images/eduardo.jpg)
 ├── package.json
 └── vite.config.js
 ```
@@ -102,7 +102,7 @@ presentation/
 
 ### Slide 3 — Quem sou eu
 - Layout: foto circular à esquerda + informações à direita
-- Foto: `eduardo.jpg`, borda accent, 120px circular
+- Foto: `public/images/eduardo.jpg` (usar placeholder SVG inicialmente; substituir pelo arquivo real antes do deploy), borda accent, 120px circular
 - Info: nome (título), cargo, experiência, formação (UNIVILLE), pós-graduação, Olimpíada do Conhecimento
 
 ### Slide 4 — Minha história (início)
@@ -157,4 +157,4 @@ presentation/
 - **Fonte:** Repositório GitHub
 - **Build command:** `vite build`
 - **Output directory:** `dist/`
-- **Subdomínio:** Custom, configurado no painel Vercel
+- **Subdomínio:** `apresentacao-univille.compiani.tech`
