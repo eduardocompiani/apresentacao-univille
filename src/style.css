@@ -163,8 +163,8 @@ html, body {
 }
 
 .profile-photo {
-  width: 120px;
-  height: 120px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   border: 2px solid var(--accent);
   object-fit: cover;
