@@ -224,13 +224,31 @@ html, body {
   color: var(--text-secondary);
 }
 
-/* Social links */
-.social-link {
-  color: var(--text);
+/* Social cards */
+.social-card {
+  display: block;
   text-decoration: none;
-  font-size: 1.2rem;
+  background: var(--surface);
+  padding: 1.5rem 2.5rem;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  text-align: center;
 }
 
-.social-link:hover {
+.social-card:hover {
+  border-color: var(--accent);
+}
+
+.social-card-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
   color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.social-card-handle {
+  font-size: 1.1rem;
+  color: var(--text);
 }
