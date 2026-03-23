@@ -209,7 +209,6 @@ html, body {
 .icon-list {
   list-style: none;
   font-size: 1.1rem;
-  color: var(--text-secondary);
 }
 
 .icon-list li {
@@ -219,4 +218,8 @@ html, body {
 .icon-list li .bullet {
   color: var(--accent);
   margin-right: 0.6rem;
+}
+
+.section-content .icon-list {
+  color: var(--text-secondary);
 }
