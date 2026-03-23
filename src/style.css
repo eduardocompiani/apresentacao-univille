@@ -1,1 +1,211 @@
-/* Styles will be added in Task 2 */
+/* === CSS Reset === */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === Custom Properties: Dark Theme (default) === */
+:root,
+[data-theme="dark"] {
+  --bg: #0a0a0f;
+  --text: #f0f0f0;
+  --text-secondary: #888888;
+  --accent: #646cff;
+  --accent-gradient: linear-gradient(135deg, #646cff, #9b59b6);
+  --positive: #4ade80;
+  --negative: #f87171;
+  --surface: #1a1a2e;
+}
+
+[data-theme="light"] {
+  --bg: #fafafa;
+  --text: #1a1a1a;
+  --text-secondary: #999999;
+  --accent: #4f46e5;
+  --accent-gradient: linear-gradient(135deg, #4f46e5, #7c3aed);
+  --positive: #16a34a;
+  --negative: #dc2626;
+  --surface: #e0e0e0;
+}
+
+/* === Base Layout === */
+html, body {
+  height: 100%;
+  overflow: hidden;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+#presentation {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+
+.slide.active {
+  display: flex;
+}
+
+/* === Progress Bar and Counter === */
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--surface);
+  z-index: 100;
+}
+
+#progress-fill {
+  height: 100%;
+  width: 0%;
+  background: var(--accent-gradient);
+  border-radius: 0 2px 2px 0;
+}
+
+#slide-counter {
+  position: fixed;
+  top: 1rem;
+  right: 1.5rem;
+  font-family: monospace;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  z-index: 100;
+}
+
+/* === Typography Utility Classes === */
+.slide-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.slide-subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+
+.section-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.accent-gradient {
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.quote {
+  border-left: 3px solid var(--accent);
+  padding-left: 1.5rem;
+  font-style: italic;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.text-positive { color: var(--positive); }
+.text-negative { color: var(--negative); }
+
+/* === Slide-Specific Layout Classes === */
+
+/* Centered content slide (title, question, quote, Q&A) */
+.slide-center {
+  text-align: center;
+}
+
+/* Two-column layout (myths vs reality) */
+.two-columns {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  max-width: 900px;
+}
+
+.two-columns > div {
+  flex: 1;
+  background: var(--surface);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+/* Profile layout (photo + info) */
+.profile {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  max-width: 800px;
+}
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.profile-info h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.profile-info p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin: 0.3rem 0;
+}
+
+/* Section content (history, future, advice, purpose) */
+.section-content {
+  max-width: 700px;
+  text-align: left;
+}
+
+.section-content h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+.section-content p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* List with icons */
+.icon-list {
+  list-style: none;
+  font-size: 1.1rem;
+}
+
+.icon-list li {
+  margin: 0.5rem 0;
+}
